@@ -1,0 +1,47 @@
+.btn {
+    font-weight: 700;
+    border-radius: 8px;
+    background-color: $redColor;
+    padding: 16px 18px;
+    color: $whiteColor;
+    text-transform: uppercase;
+}
+h1 {
+    @include adaptiveClamp (font-size, 49, 30, 1920, 768, 1);
+    font-family: 'Philosopher', sans-serif;
+    @include adaptiveClamp (line-height, 54, 44, 1920, 768, 1);
+}
+h2 {
+    text-align: start;
+    @include adaptiveClamp (font-size, 38, 30, 1920, 768, 1);
+    font-family: 'Philosopher', sans-serif;
+    @include adaptiveClamp (line-height, 54, 24, 1920, 320, 1);
+}
+h3 {
+    font-family: 'Philosopher' sans-serif;
+    font-size: $h3Font;
+    color: $blackColor;
+}
+a {
+    color: $whiteColor;
+}
+span {
+    font-family: 'Philosopher', sans-serif;
+}
+.red-span {
+    color: $redColor;
+}
+.span-600-weight {
+    font-weight: 700;
+}
+.span-fw-700 {
+    font-weight: 700;
+    color: $whiteColor;
+}
+input {
+    width: 162px;
+    height: 50px;
+    padding: 3px 16px;
+    border: 1px solid #D5D5D5;
+    border-radius: 4px;
+}

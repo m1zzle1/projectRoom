@@ -1,0 +1,41 @@
+.blogs {
+    padding: 50px 0;
+    background-color: $lightPurple;
+    &__title {
+        text-transform: uppercase;
+        color: $whiteColor;  
+        margin-bottom: 40px; 
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        @include adaptiveClamp (column-gap, 15, 5, 1920, 768, 1);
+    }
+    &__item {
+        padding: 18px;
+        @include adaptiveClamp (padding-top, 18, 10, 1920, 768, 1);
+        @include adaptiveClamp (padding-right, 18, 10, 1920, 768, 1);
+        @include adaptiveClamp (padding-bottom, 18, 10, 1920, 768, 1);
+        @include adaptiveClamp (padding-left, 18, 10, 1920, 768, 1);
+        border: 2px solid #625F77;
+        border-radius: 10px;
+        &-title {
+            font-weight: 600;
+            @include adaptiveClamp (font-size, 16, 14, 1920, 768, 1);
+            color: $whiteColor;
+            margin: 29px 0 11px 0;
+        }
+        &-subtitle {
+            @include adaptiveClamp (font-size, 14, 12, 1920 ,768, 1);
+            color: #A09CBB;
+        }
+    }
+    &__item img {
+        border-radius: 7px;
+        @include adaptiveClamp (width, 224, 164, 1920, 768, 1);
+        @include adaptiveClamp (height, 157, 97, 1920, 768, 1);
+    }
+}
+.btn__blog {
+    margin-top: 40px;
+}

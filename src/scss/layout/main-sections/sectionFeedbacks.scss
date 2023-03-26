@@ -1,0 +1,109 @@
+.feedbacks {
+    padding: 63px 0;
+    background-color: $secondaryColor;
+    &__title {
+        font-family: 'Liana', sans-serif;
+        color: $redColor;
+    }
+    &__subtitle {
+        text-transform: uppercase;
+        color: $whiteColor;
+        margin-bottom: 73px;
+    }
+    &__units {
+    }
+    &__unit p, h3{
+        color: $whiteColor;
+    }
+    &__unit {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 120px;
+        margin-top: 50px;
+        &__wrapper {
+
+        }
+        &__title {
+            font-size: 23px;
+            color: $whiteColor;
+            margin: 16px 0 23px 0;
+            width: 197px;
+        }
+        &__social-networks {
+            display: flex;
+            column-gap: 5px;
+            margin-bottom: 20px;
+            &__wrapper {
+                width: 42px;
+                height: 42px;
+                border-radius: 50%;
+                background-color: $whiteColor;
+            }
+            .facebook {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:hover {
+                    background-color: $redColor;
+                }
+                &::before {
+                    content: url('../images/facebook-dark.svg');
+                }
+                &:hover::before {
+                    content: url('../images/facebook.svg');
+                }
+            }
+            .telegram {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:hover {
+                    background-color: $redColor;
+                }
+                &::before {
+                    content: url('../images/telegram-dark.svg');
+                }
+                &:hover::before {
+                    content: url('../images/telegram.svg');
+                }
+            }
+            .instagram {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:hover {
+                    background-color: $redColor;
+                }
+                &::before {
+                    content: url('../images/insta-dark.svg');
+                }
+                &:hover::before {
+                    content: url('../images/insta.svg');
+                }
+            }    
+        }
+        &__description {
+            color: $lightLigthGreyColor !important;
+            width: 170px;
+        }
+
+        &__wrapper {
+            position: relative;
+            background-color: $lightPurple;
+            padding: 58px 62px;
+            border-radius: 10px;
+            &__description {
+                margin-bottom: 20px;
+            }
+        }
+        &__wrapper p {
+            font-size: 16px;
+        }
+        &__wrapper::before {
+            content: url(../images/sectionFeedbacks-item-5.png);
+            position: absolute;
+            top: 26px;
+            left: -71px;
+        }
+    }   
+}

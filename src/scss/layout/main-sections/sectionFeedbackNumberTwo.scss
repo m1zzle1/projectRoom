@@ -1,0 +1,17 @@
+.feedbacksTwo {
+    background-color: $secondaryColor;
+    padding-bottom: 68px;
+    text-align: center;
+    &__title {
+        font-family: 'Liana', sans-serif;
+    }
+    &__subtitle {
+        text-transform: uppercase;
+    }
+    & img {
+        @include adaptiveClamp(width, 1771, 768, 1920, 768, 1);      
+    }
+}
+.feedbacksTwo h2 {
+    color: $whiteColor;
+}

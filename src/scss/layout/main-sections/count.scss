@@ -1,0 +1,44 @@
+.count {
+    padding: 57px 15px;
+    background-color: $redColor;
+    &__wrapper {
+        display: flex;
+    }
+    &__about {
+        padding: 29px 0 29px 52px;
+        @include adaptiveClamp (width, 769, 569, 1920, 768, 1);
+        max-height: 334px;
+        background-color: $whiteColor;
+        border-radius: 22px 0px 0px 22px;
+        &__title {
+            font-size: $h2Font - 3;
+            @include adaptiveClamp (width, 600, 350, 1920, 768, 1);
+            @include adaptiveClamp (font-size, 35, 28, 1920, 768, 1);
+        }
+        &__information {
+            @include adaptiveClamp (width, 500, 400, 1920, 768, 1);
+            margin: 11px 0 27px 0;
+        }
+    }
+    &__mathematical-operations {
+        background-color: $lightRedColor;
+        border-radius: 0 22px 22px 0;
+        @include adaptiveClamp (width, 400, 292, 1920, 768, 1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__items {
+            display: grid;
+            grid-template-columns: 91px 91px;
+            grid-template-rows: 91px 91px;
+            @include adaptiveClamp (grid-gap, 20, 1, 1920, 768, 1);
+        }
+        &__items > img {
+            @include adaptiveClamp (width, 91, 71, 1920, 768, 1);
+            @include adaptiveClamp (height, 91, 71, 1920, 768, 1);
+        }
+    } 
+}
+.btn__conut {
+    width: 191px;
+}

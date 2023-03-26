@@ -1,0 +1,90 @@
+.special-offer {
+    &__container {
+        @include adaptiveClamp (width, 1160, 820, 1920, 768, 1);
+        padding-top: 93px;
+        border-top: 2px solid #434057;
+    }
+    &__title {
+        width: 800px;
+    }
+    &__description-1 {
+        width: 700px;
+    }
+    &__description-2 {
+        width: 400px;
+        font-weight: 700;
+        margin: 24px 0;
+    }
+    &__consultation__wrapper {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__consultation__unit {
+        padding: 20px 24px 34px 20px;
+        border-radius: 20px;
+        @include adaptiveClamp (width, 494, 384, 1920, 768, 1);
+        h2, p {
+            color: $whiteColor;
+            @include adaptiveClamp (width, 400, 300, 1920, 768, 1);
+        }
+        h2 {
+            font-size: 32px;
+        }
+
+    }
+    &__consultation__unit-1 {
+        background-color: $mainColor;
+        &__free {
+            font-weight: 700;
+            color: $redColor !important ;
+            margin: 12px 0;
+        }
+    }
+    &__consultation__unit-2 {
+        background-color: $redColor;
+        
+        &__description {
+            margin: 12px 0;
+        }
+    }
+    &__form {
+        @include adaptiveClamp (width, 494, 380, 1920, 768, 1);
+        padding: 0 32px 35px 32px;
+        box-shadow: 0px 0px 95px -50px black;
+        border-radius: 20px;
+        height: 339px;
+        input {
+            width: 100%;
+            margin-top: 21px;
+        }
+        &__describe {
+            height: 81px;
+            text-align: start;
+        }
+        &__btn {
+            width: 191px;
+            margin-top: 20px;
+        }
+    }
+    &__describe-the-task__unit-1 {
+        @include adaptiveClamp (width, 290, 190, 1920, 768, 1);
+        @include adaptiveClamp (margin-left, 125, 35, 1920, 768, 1);
+        &__title {
+            font-size: 29px;
+            position: relative;
+        }
+        &__title::before {
+            content: url('../images/sectionSpecialOffer-women.png');
+            position: absolute;
+            display: block;
+            top: -68px;
+            right: -225px;
+            width: 380px;
+            height: 300px;
+        }
+    }
+}
+.wrapper-2 {
+    display: flex;
+}

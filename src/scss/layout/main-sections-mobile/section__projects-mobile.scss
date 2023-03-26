@@ -1,0 +1,62 @@
+.projects-mobile {
+
+
+
+
+
+
+
+
+    .swiper {
+        .projects-mobile__progressbar-navigation {
+            @include adaptiveClamp (font-size, 14, 10, 767, 320, 1);
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            .active {
+                color: $whiteColor;
+                font-weight: 600;
+            }
+            &__item {
+                width: 60px;
+                display: inline-block;
+            }
+        }
+        .swiper-pagination__projects-mobile {
+            margin: 10px 0 !important;
+        }
+        .swiper-slide {
+           &__mobile-wrapper__item {
+            text-align: center;
+            &__title {
+                font-family: 'Philosopher';
+                font-weight: 400;
+                font-size: 27px;
+                color: $whiteColor;
+                margin-bottom: 20px;
+            }
+            &__img {
+                @include adaptiveClamp (width, 428, 292, 767, 320, 1);
+                @include adaptiveClamp(height, 386, 256, 767, 320, 1);
+                border-radius: 15px;
+            }
+           }
+           &__mobile-wrapper__wrapper-description {
+            @include adaptiveClamp (width, 428, 292, 767, 320, 1);
+            @include adaptiveClamp(height, 306, 236, 767, 320, 1);
+            margin: 15px auto 0 auto;
+            @include adaptiveClamp (padding, 30, 20, 767, 320, 1);
+            opacity: 0.9;
+            border: 1px solid #FFFFFF;
+            border-radius: 15px;
+            &__unit {
+                text-align: start;
+                @include adaptiveClamp(margin-bottom, 19, 9, 767, 320, 1);
+            }
+            .projects-mobile__btn {
+                width: 100%;
+            }
+           }
+        }
+    }
+}

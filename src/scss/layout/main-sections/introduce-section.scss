@@ -1,0 +1,88 @@
+.about-us {
+    max-height: 852px;
+   &__contacts {
+    display: grid;
+    grid-template-columns: 0.55fr 0.85fr 1.60fr;
+    &__photo {
+        height: 100%;
+        @include adaptiveClamp (width, 270, 110, 1920, 768, 1)
+    }
+    &__social-networks {
+        display: flex;
+        &__units {
+            @include adaptiveClamp (width, 71, 54, 1920, 768, 1);
+            background-color: $redColor;
+        }
+        &__unit {
+            @include adaptiveClamp (width, 53, 21, 1920, 768, 1);
+            @include adaptiveClamp (height, 53, 21, 1920, 768, 1);
+            background: #DC3441;
+            box-shadow: 0px 4px 24px #BA2B36;
+            border-radius: 4px;
+            margin: 12px auto 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+       }
+   }
+   &__place-an-order {
+    margin: 0 auto;
+    padding: 52px 0px 140px 0px;
+    &__logo {
+    @include adaptiveClamp (width, 451, 200, 1920, 768, 1);
+    }
+    &__stick {
+        @include adaptiveClamp (width, 250, 170, 1920, 768, 1);
+        height: 1px;
+        background-color: $redColor;
+        margin: 80px 0 58px 0;
+    }
+    &__title {
+        color: $redColor;
+        @include adaptiveClamp (width, 445, 220, 1920, 768, 1);
+        &__black {
+            color: $blackColor;
+        }
+        &__underline {
+            text-decoration: underline;
+            color: $blackColor;
+        }
+    }
+    &__btn {
+        @include adaptiveClamp (width, 334, 200, 1920, 768, 1);
+        @include adaptiveClamp (height, 65, 35, 1920, 768, 1);
+        @include adaptiveClamp (font-size, 18, 15, 1920, 768, 1);
+        color: $whiteColor;
+        margin-top: 77px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+   }
+   &__interface {
+    background-image: url(../images/main-room.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    @include adaptiveClamp (padding-top, 90, 30, 1920, 786, 1);
+    @include adaptiveClamp (padding-bottom, 82, 40, 1920, 768, 1);
+    @include adaptiveClamp (padding-left, 82,22, 1920, 768, 1);
+    &__number {
+        color: $whiteColor;
+        @include adaptiveClamp (width, 460, 300, 1920, 768, 1);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.46);;
+    }
+    &__menu {
+        display: flex;
+        gap: 10px;
+        margin-top: 30px;
+        a:hover {
+            border-bottom: 2px solid #DC3441;
+        }
+        &__element__stick {
+            color: rgba(255, 255, 255, 0.66);
+        }
+    }
+   }
+}
+

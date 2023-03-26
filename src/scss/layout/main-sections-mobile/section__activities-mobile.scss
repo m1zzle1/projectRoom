@@ -1,0 +1,113 @@
+.activities-mobile {
+    padding: 35px 0 45px 0;
+    &__title {
+        font-family: 'Liana', sans-serif;
+    }
+    &__sub-title {
+        text-transform: uppercase;
+        font-size: 20px;
+        margin: 12px 0;
+    }
+    &__progressbar-navigation {
+        display: flex;
+        justify-content: space-between;
+        &__item {
+            width: 58px;
+        }
+        .active {
+            font-weight: 700;
+        }
+    }
+}
+.swiper {
+    &-slide {
+        &__item {
+            display: flex;
+            justify-content: space-between;
+            &__img {
+                @include adaptiveClamp(width, 427, 170, 767, 320, 1);
+                @include adaptiveClamp(height, 416, 160, 767, 320, 1);
+            }
+            &__description {
+                @include adaptiveClamp (height, 400, 100, 767, 320, 1);
+                overflow: hidden;
+                margin-top: 25px;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    &-slide-prev img {
+        width: 0;
+        height: 0;
+    }
+}
+
+.swiper-second {
+    .activities-mobile__stages {
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    .swiper-wrapper {
+        display: flex;
+    }
+    .swiper-slide {
+        display: flex;
+        &__item {
+            background: #FFFFFF;
+            box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.05);
+            border-radius: 9px;
+            width: 113px;
+            height: 99px;
+            padding: 45px 8px 10px;
+            &__title {
+                position: relative;
+            }
+            &__title::before {
+                content: '';
+                display: block;
+                width: 25px;
+                height: 25px;
+                padding: 5px 10px 4px 9px;
+                font-weight: 700;
+                background-color: $mainColor;
+                position: absolute;
+                left: -1px;
+                top: -38px;
+                border-radius: 50%;
+                color: $whiteColor;
+            }
+            .item-1::before {
+                content: '1';
+            }
+            .item-2::before {
+                content: '2';
+            }
+            .item-3::before {
+                content: '3';
+            }
+            .item-4::before {
+                content: '4';
+            }
+            .item-5::before {
+                content: '5';
+            }
+            .item-6::before {
+                content: '6';
+            }
+            .item-7::before {
+                content: '7';
+            }
+            .item-8::before {
+                content: '8';
+            }
+        }
+    }
+}
+.activities-mobile__btn {
+    @include adaptiveClamp (width, 678, 278, 766, 320, 1);
+    margin: 20px auto 0 auto;
+    display: block;
+
+}
+

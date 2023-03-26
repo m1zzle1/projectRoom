@@ -1,0 +1,91 @@
+.main-lines {
+    padding: 45px 0 80px 0;
+    &__container {
+        @include adaptiveClamp (max-width, 1160, 770, 1920, 768, 1);
+    }
+    .main-lines__title {
+        font-family: 'Liana', sans-serif;
+    }
+    .main-lines__sub-sub-title {
+        width: 530px;
+        font-size: $primaryFont + 5;
+        margin: 50px 0 50px 0;
+    }
+    .main-lines__units {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 147px;
+        }
+    .main-lines__unit {
+        border-radius: 20px;
+        position: relative;
+        @include adaptiveClamp (width, 569, 350, 1920, 768, 1);
+        @include adaptiveClamp (height, 432, 260, 1920, 768, 1);
+    }
+    .main-lines__unit:nth-child(1) {
+        background-image: url(../images/main-lines__1-photo.png);
+        background-repeat: no-repeat;
+        
+    }
+    .main-lines__unit:nth-child(2) {
+        background-image: url(../images/main-lines__2-photo.png);
+        background-repeat: no-repeat;
+        
+    }
+    .main-lines__unit:nth-child(3) {
+        background-image: url(../images/main-lines__3-photo.png);
+        background-repeat: no-repeat;
+        
+    }
+    .main-lines__unit:nth-child(4) {
+        background-image: url(../images/main-lines__4-photo.png);
+        background-repeat: no-repeat;
+    }
+    .main-lines__benefit {
+        display: inline-block;
+        background-color: $redColor;
+        padding: 4px 18px;
+        font-weight: 600;
+        position: absolute;
+        left: 0;
+        top: 26px;
+        span {
+            color: $whiteColor;
+        }
+    }
+    .main-lines__description {
+        @include adaptiveClamp (width, 482, 330, 1920, 768, 1);
+        @include adaptiveClamp (height, 177, 150, 1920, 768, 1);
+        position: absolute;
+        right: 30px;
+        bottom: -79px;
+        background-color: $whiteColor;
+        border-radius: 8px;
+        @include adaptiveClamp (padding-top, 19, 9, 1920, 768, 1);
+        @include adaptiveClamp (padding-bottom, 21, 11, 1920, 768, 1);
+        @include adaptiveClamp (padding-left, 36, 10, 1920, 768, 1);
+        padding: 19px 0 21px 36px;
+        cursor: pointer;
+        &:hover {
+            background-color: $redColor;
+        }
+        &::before {
+            content: url(../../../images/arrow.svg);
+            position: absolute;
+            right: 27px;
+            top: 31px;
+        }
+        &__title {
+            width: 244px;
+            @include adaptiveClamp (margin-bottom, 30, 15, 1920, 768, 1);
+            @include adaptiveClamp (font-size, 28, 24, 1920, 768, 1);
+
+        }
+        &__sub-title {
+            @include adaptiveClamp (width, 350, 300, 1920, 768, 1);
+            @include adaptiveClamp (font-size, 15, 13, 1920, 768, 1);
+        }
+    }
+}

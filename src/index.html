@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    'title': 'Главная'
+  })
+  <body>
+    <div class="wrapper">
+      @@include('html/header.html', {})
+      <main class="page page__hidden-mobile">
+        @@include('html/main-sections/introduce-section.html')
+        @@include('html/main-sections/main-lines.html')
+        @@include('html/main-sections/activities.html')
+        @@include('html/main-sections/count.html')
+        @@include('html/main-sections/projects.html')
+        @@include('html/main-sections/sectionOurBenefits.html')
+        @@include('html/main-sections/sectionBlog.html')
+        @@include('html/main-sections/sectionFeedback.html')
+        @@include('html/main-sections/sectionFeedbackNumberTwo.html')
+        @@include('html/main-sections/sectionEmployees.html')
+        @@include('html/main-sections/sectionSpecialOffer.html')
+        <div data-observ></div>
+      </main>
+      <main class="page page__mobile">
+        @@include('html/main-sections-mobile/section__activities-mobile.html')
+        @@include('html/main-sections-mobile/section__projects-mobile.html')
+      </main>
+      @@include('html/footer.html', {})
+    </div>
+    @@include('html/script.html', {})
+  </body>
+</html> 
